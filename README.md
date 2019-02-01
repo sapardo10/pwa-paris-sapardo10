@@ -1,4 +1,4 @@
 # pwa-paris-sapardo10
 
 Deployed on
-https://pwa-paris-metro.firebaseapp.com/
+https://launch-pwa-metro.firebaseapp.com/
