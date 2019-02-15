@@ -97,6 +97,7 @@
         }
 
         if (app.isLoading) {
+            window.cardLoadTime = performance.now();
             app.spinner.setAttribute('hidden', true);
             app.container.removeAttribute('hidden');
             app.isLoading = false;
@@ -195,6 +196,7 @@
      *   SimpleDB (https://gist.github.com/inexorabletash/c8069c042b734519680c)
      ************************************************************************/
 
+     window.apiLoadTime = performance.now()
     app.getSchedule('metros/1/bastille/A', 'Bastille, Direction La Défense');
     app.selectedTimetables = [
         {key: initialStationTimetable.key, label: initialStationTimetable.label}
